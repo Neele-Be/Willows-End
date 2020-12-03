@@ -8,6 +8,11 @@ public class SpriteRendererOrderSystem : MonoBehaviour
     private int sortingOrdnerBase = 5000;
     [SerializeField]
     private int offset = 0;
+    [SerializeField]
+    private bool runOnlyOnce = false;
+    private float timer;
+    private float timerMax = .1f;
+
     private Renderer PositionRenderer;
 
     private void Awake()
@@ -19,6 +24,15 @@ public class SpriteRendererOrderSystem : MonoBehaviour
 
     private void LateUpdate()
     {
-        PositionRenderer.sortingOrder = (int)(sortingOrdnerBase - transform.position.y - offset);
+        timer -= Time.deltaTime;
+        if (timer <= 0f)
+        {
+            timer = timerMax;
+            PositionRenderer.sortingOrder = (int)(sortingOrdnerBase - transform.position.y - offset);
+            if (runOnlyOnce)
+            {
+                Destroy(this);
+            }
+        }
     }
 }
