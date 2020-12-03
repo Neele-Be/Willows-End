@@ -42,6 +42,6 @@ public class CursorController : MonoBehaviour
 
     public void ActivateAim()
     {
-        Cursor.SetCursor(aim, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(aim, new Vector2(aim.width / 3, aim.height / 3), CursorMode.Auto);
     }
 }
