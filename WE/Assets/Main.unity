@@ -131,11 +131,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1295141}
   - component: {fileID: 1295144}
-  - component: {fileID: 1295143}
-  - component: {fileID: 1295142}
-  - component: {fileID: 1295145}
-  - component: {fileID: 1295146}
   - component: {fileID: 1295147}
+  - component: {fileID: 1295143}
+  - component: {fileID: 1295146}
+  - component: {fileID: 1295145}
+  - component: {fileID: 1295142}
+  - component: {fileID: 1295148}
   m_Layer: 0
   m_Name: Starterchest
   m_TagString: Untagged
@@ -304,6 +305,18 @@ MonoBehaviour:
   sortingOrdnerBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &1295148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23845f79d49f8ca4db8d1cd0e8360e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438390707
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +331,7 @@ GameObject:
   - component: {fileID: 438390710}
   - component: {fileID: 438390709}
   - component: {fileID: 438390713}
+  - component: {fileID: 438390714}
   m_Layer: 0
   m_Name: CryoBox_Dead
   m_TagString: Untagged
@@ -472,6 +486,18 @@ MonoBehaviour:
   sortingOrdnerBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &438390714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438390707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e670171eb01b48649bbd86a1d4b18ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1207,7 @@ GameObject:
   - component: {fileID: 846678826}
   - component: {fileID: 846678825}
   - component: {fileID: 846678827}
+  - component: {fileID: 846678831}
   m_Layer: 0
   m_Name: Shelf
   m_TagString: Untagged
@@ -1349,6 +1376,18 @@ MonoBehaviour:
   sortingOrdnerBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &846678831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846678823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0420533b9d3a1548941cc2bc7b7d0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1168878867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,11 +2602,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1203376005}
   - component: {fileID: 1203376010}
+  - component: {fileID: 1203376011}
   - component: {fileID: 1203376009}
   - component: {fileID: 1203376008}
   - component: {fileID: 1203376007}
   - component: {fileID: 1203376006}
-  - component: {fileID: 1203376011}
+  - component: {fileID: 1203376012}
   m_Layer: 0
   m_Name: ResearchTable_Bunker
   m_TagString: Untagged
@@ -2660,7 +2700,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2671,7 +2711,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 2, y: 4}
   m_EdgeRadius: 0
 --- !u!212 &1203376010
 SpriteRenderer:
@@ -2739,6 +2779,65 @@ MonoBehaviour:
   sortingOrdnerBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &1203376012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203376004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416329d6359ae8f4f8c487b57ad961fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1343548588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343548590}
+  - component: {fileID: 1343548589}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1343548589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343548588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a82c71f93b28784c85fac4363348511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointer: {fileID: 2800000, guid: e454f36ff8d0f3845831e7f6e13c7020, type: 3}
+  look: {fileID: 2800000, guid: e8e1eba376c57474e8c67ea7d64a3ee6, type: 3}
+  speak: {fileID: 2800000, guid: 149f1a78e063f07468e15234b2129a30, type: 3}
+  aim: {fileID: 2800000, guid: 5b7c66ca990b6aa4981dbb0d01fac876, type: 3}
+--- !u!4 &1343548590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343548588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.10727787, y: 0.2348793, z: -9.444336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1358908947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +3063,7 @@ GameObject:
   - component: {fileID: 1453902515}
   - component: {fileID: 1453902514}
   - component: {fileID: 1453902519}
+  - component: {fileID: 1453902520}
   m_Layer: 0
   m_Name: CryoBox_Partner
   m_TagString: Untagged
@@ -3134,6 +3234,18 @@ MonoBehaviour:
   sortingOrdnerBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &1453902520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453902512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23845f79d49f8ca4db8d1cd0e8360e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1534651661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4409,6 +4521,7 @@ GameObject:
   - component: {fileID: 1938228671}
   - component: {fileID: 1938228670}
   - component: {fileID: 1938228675}
+  - component: {fileID: 1938228676}
   m_Layer: 0
   m_Name: CryoBox_Player
   m_TagString: Untagged
@@ -4577,3 +4690,15 @@ MonoBehaviour:
   sortingOrdnerBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &1938228676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938228668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23845f79d49f8ca4db8d1cd0e8360e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
