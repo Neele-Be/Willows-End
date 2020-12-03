@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 1295142}
   - component: {fileID: 1295145}
   - component: {fileID: 1295146}
+  - component: {fileID: 1295147}
   m_Layer: 0
   m_Name: Starterchest
   m_TagString: Untagged
@@ -232,9 +233,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: 6231941509758039382, guid: 95077c2cf93c0f54eb09d5b7fe203215,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -288,6 +289,20 @@ EdgeCollider2D:
   - {x: -0.50523293, y: 0.63241774}
   - {x: 0.4894812, y: 0.63012147}
   - {x: 0.49419272, y: 1.4936187}
+--- !u!114 &1295147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: 0
 --- !u!1 &438390707
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +316,7 @@ GameObject:
   - component: {fileID: 438390711}
   - component: {fileID: 438390710}
   - component: {fileID: 438390709}
+  - component: {fileID: 438390713}
   m_Layer: 0
   m_Name: CryoBox_Dead
   m_TagString: Untagged
@@ -426,9 +442,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: 255931896131558336, guid: 95df699396bacc14c81051f883751b05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -440,6 +456,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &438390713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438390707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,9 +670,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -660,15 +690,6 @@ Tilemap:
   m_GameObject: {fileID: 790817372}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: -2, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 8
-      m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
   - first: {x: 4, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -682,7 +703,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -876,7 +897,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: ab1a136f385661e4ca3effa966574ce3, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 505cddfbb27af01439adb48464800b71, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 4d0d259685f335545aef553d1eb72d19, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -989,43 +1010,43 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 1
     m_Data: {fileID: -2473402243231651943, guid: bb1a1bacf1f5d0243a669644c5fd7671,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -3617066700368008121, guid: bb1a1bacf1f5d0243a669644c5fd7671,
       type: 3}
@@ -1061,7 +1082,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 77580649221425583, guid: bb1a1bacf1f5d0243a669644c5fd7671, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 22
+  - m_RefCount: 21
     m_Data:
       e00: 1
       e01: 0
@@ -1080,7 +1101,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 22
+  - m_RefCount: 21
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1153,10 +1174,11 @@ GameObject:
   m_Component:
   - component: {fileID: 846678824}
   - component: {fileID: 846678829}
+  - component: {fileID: 846678830}
   - component: {fileID: 846678828}
-  - component: {fileID: 846678827}
   - component: {fileID: 846678826}
   - component: {fileID: 846678825}
+  - component: {fileID: 846678827}
   m_Layer: 0
   m_Name: Shelf
   m_TagString: Untagged
@@ -1295,9 +1317,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: -8432051918453230086, guid: fa116ae41ef7cb94f8850cc6dff2da90,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1310,6 +1332,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &846678830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846678823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: 0
 --- !u!1 &1168878867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1418,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2528,6 +2564,7 @@ GameObject:
   - component: {fileID: 1203376008}
   - component: {fileID: 1203376007}
   - component: {fileID: 1203376006}
+  - component: {fileID: 1203376011}
   m_Layer: 0
   m_Name: ResearchTable_Bunker
   m_TagString: Untagged
@@ -2567,11 +2604,11 @@ EdgeCollider2D:
   m_Points:
   - {x: 1.4665751, y: 1.0850071}
   - {x: -0.313756, y: 1.0765301}
-  - {x: -0.28832436, y: -1.0850075}
-  - {x: -0.2713728, y: -1.5342685}
-  - {x: -0.74606276, y: -1.5596973}
-  - {x: -0.9071183, y: -1.7130998}
-  - {x: -0.983408, y: -1.8479029}
+  - {x: -0.31146193, y: -0.93461096}
+  - {x: -0.7919769, y: -0.9326824}
+  - {x: -0.79233885, y: -1.1200758}
+  - {x: -0.79142857, y: -1.7015308}
+  - {x: -0.7983041, y: -1.88261}
 --- !u!50 &1203376007
 Rigidbody2D:
   serializedVersion: 4
@@ -2669,9 +2706,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2000742502315210286, guid: 7c9193230ff8d5847bec51f576db337a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2684,6 +2721,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1203376011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203376004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: 0
 --- !u!1 &1358908947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366092231}
   - component: {fileID: 1366092230}
+  - component: {fileID: 1366092236}
   - component: {fileID: 1366092233}
   - component: {fileID: 1366092232}
   - component: {fileID: 1366092234}
@@ -2777,9 +2829,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 3471914632296032467, guid: dee0191f4c611c8459bfdfea6f305fa5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2878,6 +2930,20 @@ CircleCollider2D:
   m_Offset: {x: 0.005, y: -0.95}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1366092236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366092229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: -2
 --- !u!1 &1453902512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +2958,7 @@ GameObject:
   - component: {fileID: 1453902516}
   - component: {fileID: 1453902515}
   - component: {fileID: 1453902514}
+  - component: {fileID: 1453902519}
   m_Layer: 0
   m_Name: CryoBox_Partner
   m_TagString: Untagged
@@ -2931,8 +2998,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -1.478158, y: 0.90788746}
   - {x: 1.4923885, y: 0.9023715}
-  - {x: 1.478158, y: 0.41092148}
-  - {x: 1.478158, y: -0.3479793}
+  - {x: 1.4897269, y: 0.5728872}
+  - {x: 1.4781576, y: 0.44562805}
+  - {x: 0.19676721, y: 0.434175}
+  - {x: -1.506638, y: 0.43658423}
 --- !u!50 &1453902515
 Rigidbody2D:
   serializedVersion: 4
@@ -3030,9 +3099,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1958073117619112028, guid: fdccc335fe3b1ce4d8fd2c912a9b76ad,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3045,6 +3114,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1453902519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453902512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: 0
 --- !u!1 &1534651661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,8 +3196,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -105531417
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4043,9 +4126,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingLayerID: 2075762115
+  m_SortingLayer: 3
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4319,6 +4402,7 @@ GameObject:
   - component: {fileID: 1938228672}
   - component: {fileID: 1938228671}
   - component: {fileID: 1938228670}
+  - component: {fileID: 1938228675}
   m_Layer: 0
   m_Name: CryoBox_Player
   m_TagString: Untagged
@@ -4457,9 +4541,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: 782977163
+  m_SortingLayer: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: -5660825858039948050, guid: 00caf8a75fa2f9c41bc71f7ab41391ad,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4472,3 +4556,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1938228675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938228668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3a08f279debc45ae931b25151729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrdnerBase: 5000
+  offset: 0
