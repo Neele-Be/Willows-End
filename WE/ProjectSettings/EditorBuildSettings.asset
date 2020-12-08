@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Professor_Home.unity
+    guid: cd49292647df7924b91a7255b2a3d5aa
+  - enabled: 1
+    path: Assets/Scenes/BunkerRoom.unity
+    guid: 95245a3a2d985d64cbd10cf6555d08e1
   m_configObjects: {}

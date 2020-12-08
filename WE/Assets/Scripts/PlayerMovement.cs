@@ -12,13 +12,18 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 boxSize = new Vector2(1f, 1f);
 
     private Vector2 movement;
+    
+    //Transitions
+    public VectorValue startingPosition;
 
 
     // Start
 
-    private void Start()
+   void Start()
     {
         interactIcon.SetActive(false);
+
+        transform.position = startingPosition.initialValue;
     }
 
 
@@ -37,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteractIcon();
+
+        
     }
 
 
@@ -61,13 +68,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckInteractIcon()
     {
-        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position,boxSize, 0, Vector2.zero);
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
 
-        if(hits.Length > 0)
+        if (hits.Length > 0)
         {
-            foreach(RaycastHit2D rc in hits)
+            foreach (RaycastHit2D rc in hits)
             {
-                if(rc.transform.GetComponent<Interactable>())
+                if (rc.transform.GetComponent<Interactable>())
                 {
                     rc.transform.GetComponent<Interactable>().Interact();
                     return;
