@@ -6667,10 +6667,8 @@ GameObject:
   - component: {fileID: 1115560444}
   - component: {fileID: 1115560443}
   - component: {fileID: 1115560442}
-  - component: {fileID: 1115560441}
-  - component: {fileID: 1115560440}
-  - component: {fileID: 1115560439}
   - component: {fileID: 1115560438}
+  - component: {fileID: 1115560439}
   m_Layer: 0
   m_Name: Door_Dark
   m_TagString: Untagged
@@ -6692,33 +6690,7 @@ Transform:
   m_Father: {fileID: 682355943}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1115560438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115560436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23845f79d49f8ca4db8d1cd0e8360e5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1115560439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115560436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587904afffc00e142ba16e474fc30bc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  open: {fileID: 0}
-  closed: {fileID: -7941446724874181117, guid: ab1919c3b9f148842920523b1d1f0b21, type: 3}
---- !u!50 &1115560440
+--- !u!50 &1115560438
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -6728,7 +6700,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1115560436}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -6739,8 +6711,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &1115560441
-EdgeCollider2D:
+--- !u!114 &1115560439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115560436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e6052cba5945149a2b2a5bd734f9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1115560442
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6752,26 +6736,6 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_EdgeRadius: 0.1
-  m_Points:
-  - {x: -0.49942565, y: 0.53247297}
-  - {x: -0.50523245, y: -0.45493966}
-  - {x: 0.5153711, y: -0.4572358}
-  - {x: 0.49419272, y: 0.5357083}
---- !u!61 &1115560442
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115560436}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6781,10 +6745,10 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 1
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0.2
+  m_EdgeRadius: 0
 --- !u!114 &1115560443
 MonoBehaviour:
   m_ObjectHideFlags: 0
